@@ -29,3 +29,15 @@ function closeNav() {
   $("#shownav").delay(500).fadeIn(0);
   $("#hidenav").hide();
 }
+
+function openNavMobile() {
+  $(".sidenav").width('50%');
+  $("#hidenavmobile").delay(500).fadeIn(0);
+  $("#shownavmobile").hide();
+}
+
+function closeNavMobile() {
+  $(".sidenav").width(0);
+  $("#shownavmobile").delay(500).fadeIn(0);
+  $("#hidenavmobile").hide();
+}

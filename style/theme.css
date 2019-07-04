@@ -306,7 +306,6 @@ h1 {
     }
 }
 
-/* Phone Mode */
 #hidenav {
   position: fixed;
   color: black;
@@ -328,7 +327,15 @@ h1 {
   cursor: pointer;
   transition: .5s;
 }
+@media (pointer: fine){
+#shownavmobile {
+  display:none;
+}
 
+#hidenavmobile {
+  display:none;
+}
+}
 @media screen and (max-width: 610px) {
 
   .main {
@@ -336,6 +343,102 @@ h1 {
   }
 
 }
+
+@media (pointer: coarse) {
+  a[href='#sectionPres'] {
+    margin-top: 75px !important;
+  }
+
+  .sidenav a {
+    height: 8%;
+    font-size: 25px;
+  }
+
+  .sidenav {
+    width: 50%;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  #hidenavmobile {
+    position: fixed;
+    color: black;
+    font-size: 70px;
+    top: 2px;
+    left: 38%;
+    z-index :+2;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  #shownavmobile {
+    position: fixed;
+    color: white;
+    font-size: 70px;
+    top: 2px;
+    left: 2px;
+    z-index :+2;
+    cursor: pointer;
+    transition: .5s;
+  }
+
+  #shownav {
+    display:none;
+  }
+
+  #hidenav {
+    display:none;
+  }
+
+  .column {
+      width: 100%;
+  }
+
+  /* Place the timelime to the left */
+  .timeline::after {
+      left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+      left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+      left: 0%;
+  }
+
+  #par {
+    font-size: 25px;
+  }
+
+  .content {
+    font-size: 25px;
+  }
+
+  .content p {
+    font-size: 25px !important;
+  }
+}
+
 /* Micro modifs */
 
 #prenom {white-space:nowrap;}
