@@ -14,6 +14,12 @@ body {
   color: #00b988;
 }
 
+/* Center website */
+.main {
+  margin: auto;
+  transition: margin-left .5s;
+}
+
 .captures {
     width:90%;
 }
@@ -43,6 +49,10 @@ p a:hover {
   color: pink;
 }
 
+#par {
+  font-size: 18px;
+}
+
 .affImg:hover {
     background:#D3D3D3;
     color: #0e2a36;
@@ -69,15 +79,11 @@ p a:hover {
   transition: 1.2s;
 }
 
-/* Center website */
-.main {
-    max-width: 90%;
-    margin: auto;
-}
 
 h1 {
     font-size: 50px;
     word-break: break-all;
+    margin: 16px 0;
 }
 
 .row {
@@ -129,12 +135,13 @@ h1 {
     height: 100%; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
+    z-index: 2; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #00b988; /* #0e2a36 */
+    background-color: #00b988; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+    transition: .5s;
 }
 
 /* The navigation menu links */
@@ -144,6 +151,7 @@ h1 {
     font-size: 22px;
     color: #0e2a36;
     display: block;
+    white-space: nowrap;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -247,7 +255,7 @@ h1 {
     left: 30px;
     border: medium solid #00b988;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #00b988 transparent transparent;
+    border-color: transparent white transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -284,7 +292,7 @@ h1 {
         left: 60px;
         border: medium solid #00b988;
         border-width: 10px 10px 10px 0;
-        border-color: transparent #00b988 transparent transparent;
+        border-color: transparent white transparent transparent;
     }
 
     /* Make sure all circles are at the same spot */
@@ -298,7 +306,41 @@ h1 {
     }
 }
 
+/* Phone Mode */
+#hidenav {
+  position: fixed;
+  color: #0e2a36;
+  font-size: 40px;
+  top: 2px;
+  left: 125px;
+  z-index :+2;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#shownav {
+  position: fixed;
+  color: #00b988;
+  font-size: 40px;
+  top: 2px;
+  left: 2px;
+  z-index :+2;
+  cursor: pointer;
+  transition: .5s;
+}
+
+@media screen and (max-width: 610px) {
+
+  .main {
+    margin-left: 0 !important;
+  }
+
+}
 /* Micro modifs */
 
-h1 { margin: 0 0 16px 0; }
+#prenom {white-space:nowrap;}
+
 #sectionParcours { margin-top: 90px; }
+a[href='#sectionPres'] {
+  margin-top: 15px;
+}

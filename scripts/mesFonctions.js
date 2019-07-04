@@ -13,5 +13,19 @@ $(document).ready(function(){
 });
 */
 function toggleDiv(divId) {
-        $("#"+divId).toggle(100); 
+        $("#"+divId).toggle(100);
     }
+
+function openNav() {
+  $(".sidenav").width(160);
+  $('.main').css({'margin-left':'160px'});
+  $("#hidenav").delay(500).fadeIn(0);
+  $("#shownav").hide();
+}
+
+function closeNav() {
+  $(".sidenav").width(0);
+  $('.main').css({'margin-left':'0'});
+  $("#shownav").delay(500).fadeIn(0);
+  $("#hidenav").hide();
+}
