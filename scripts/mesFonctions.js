@@ -76,14 +76,14 @@ $(document).ready(function () {
             $("#currProj").removeClass("current");
         }
 
-        if (ScrollTop > 1460 && ScrollTop < 1750) {
+        if (ScrollTop > 1460 && ScrollTop < 1700) {
             $("#currComp").addClass("current");
             $("#currPar").removeClass("current");
             $("#currPres").removeClass("current");
             $("#currProj").removeClass("current");
         }
 
-        if (ScrollTop > 1750) {
+        if (ScrollTop > 1700) {
             $("#currProj").addClass("current");
             $("#currComp").removeClass("current");
             $("#currPar").removeClass("current");
