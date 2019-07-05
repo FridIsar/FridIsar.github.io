@@ -179,6 +179,12 @@ h1 {
     background-color: #232325;
 }
 
+.current {
+    color: white !important;
+    transition: 0.5s;
+    background-color: #232325;
+}
+
 /* Style page content */
 .main {
     margin-left: 160px; /* Same as the width of the sidebar */

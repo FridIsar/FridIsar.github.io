@@ -56,3 +56,38 @@ $(document).ready(function(){
         $("body").css('background-color', 'rgb(' + cBg.join(',') +')');
     });
 });
+
+$(document).ready(function () {
+    $(window).scroll(function(){
+        var ScrollTop = parseInt($(window).scrollTop());
+        console.log(ScrollTop);
+
+        if (ScrollTop > 100 && ScrollTop < 550) {
+          $("#currPres").addClass("current");
+          $("#currPar").removeClass("current");
+          $("#currComp").removeClass("current");
+          $("#currProj").removeClass("current");
+        }
+
+        if (ScrollTop > 551 && ScrollTop < 1460) {
+            $("#currPar").addClass("current");
+            $("#currPres").removeClass("current");
+            $("#currComp").removeClass("current");
+            $("#currProj").removeClass("current");
+        }
+
+        if (ScrollTop > 1460 && ScrollTop < 1850) {
+            $("#currComp").addClass("current");
+            $("#currPar").removeClass("current");
+            $("#currPres").removeClass("current");
+            $("#currProj").removeClass("current");
+        }
+
+        if (ScrollTop > 1850) {
+            $("#currProj").addClass("current");
+            $("#currComp").removeClass("current");
+            $("#currPar").removeClass("current");
+            $("#currPres").removeClass("current");
+        }
+    });
+});
