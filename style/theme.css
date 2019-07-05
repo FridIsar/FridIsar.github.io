@@ -8,15 +8,15 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: #232325;
   padding: 20px;
   font-family: Arial;
   color: white;
+  font-size: 18px;
 }
 
 /* Center website */
 .main {
-  margin: auto;
   transition: margin-left .5s;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .affImg {
-    background:black;
+    background:#232325;
     color: white;
     padding: 4px;
 }
@@ -49,13 +49,14 @@ p a:hover {
   color: pink;
 }
 
+
 #par {
   font-size: 18px;
 }
 
 .affImg:hover {
     background:#D3D3D3;
-    color: black;
+    color: #232325;
     padding: 4px;
     transition: 0.4s;
     cursor: pointer;
@@ -109,10 +110,27 @@ h1 {
     clear: both;
 }
 
+.logos  {
+  opacity: 0.2;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin: auto;
+  top:0;
+  height: 90%;
+  position: absolute;
+  max-width: 100%;
+  z-index: 0;
+}
+
+.content h3, .content p {
+  z-index: 1 !important;
+}
+
 /* Content */
 .content {
     background-color: white;
-    color: black;
+    color: #232325;
     padding: 10px;
 }
 
@@ -138,7 +156,7 @@ h1 {
     z-index: 2; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: white; /* Black */
+    background-color: white; /* #232325 */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
     transition: .5s;
@@ -149,7 +167,7 @@ h1 {
     padding: 6px 8px 6px 12px;
     text-decoration: none;
     font-size: 22px;
-    color: black;
+    color: #232325;
     display: block;
     white-space: nowrap;
 }
@@ -158,7 +176,7 @@ h1 {
 .sidenav a:hover {
     color: white;
     transition: 0.5s;
-    background-color: black;
+    background-color: #232325;
 }
 
 /* Style page content */
@@ -184,6 +202,12 @@ h1 {
 
 .timeline .container p {
     font-size: 18px;
+    margin: 0;
+}
+
+.timeline .container li {
+    font-size: 18px;
+    margin-left: 25px;;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -213,7 +237,7 @@ h1 {
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: black;
+    background-color: #232325;
     border: 4px solid white;
     top: 15px;
     border-radius: 50%;
@@ -308,7 +332,7 @@ h1 {
 
 #hidenav {
   position: fixed;
-  color: black;
+  color: #232325;
   font-size: 40px;
   top: 2px;
   left: 125px;
@@ -343,7 +367,7 @@ h1 {
   }
 
 }
-
+/**
 @media (pointer: coarse) {
   a[href='#sectionPres'] {
     margin-top: 75px !important;
@@ -364,7 +388,7 @@ h1 {
 
   #hidenavmobile {
     position: fixed;
-    color: black;
+    color: #232325;
     font-size: 70px;
     top: 2px;
     left: 38%;
@@ -396,19 +420,19 @@ h1 {
       width: 100%;
   }
 
-  /* Place the timelime to the left */
+  /* Place the timelime to the left
   .timeline::after {
       left: 31px;
   }
 
-  /* Full-width containers */
+  /* Full-width containers
   .container {
       width: 100%;
       padding-left: 70px;
       padding-right: 25px;
   }
 
-  /* Make sure that all arrows are pointing leftwards */
+  /* Make sure that all arrows are pointing leftwards
   .container::before {
       left: 60px;
       border: medium solid white;
@@ -416,12 +440,12 @@ h1 {
       border-color: transparent white transparent transparent;
   }
 
-  /* Make sure all circles are at the same spot */
+  /* Make sure all circles are at the same spot
   .left::after, .right::after {
       left: 15px;
   }
 
-  /* Make all right containers behave like the left ones */
+  /* Make all right containers behave like the left ones
   .right {
       left: 0%;
   }
@@ -438,12 +462,12 @@ h1 {
     font-size: 25px !important;
   }
 }
-
+**/
 /* Micro modifs */
 
 #prenom {white-space:nowrap;}
 
 #sectionParcours { margin-top: 90px; }
 a[href='#sectionPres'] {
-  margin-top: 15px;
+  margin-top: 20px;
 }
