@@ -70,6 +70,7 @@ p a:hover {
     webkit-transition: -webkit-transform 1.2s ease-in-out;
     transition: transform 1.2s ease-in-out;
     transition: 1.2s;
+    margin-right: 10px;
 }
 
 #avatar:hover {
