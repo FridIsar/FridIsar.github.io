@@ -348,6 +348,7 @@ h1 {
 }
 
 #shownav {
+  display: none;
   position: fixed;
   color: white;
   font-size: 40px;
