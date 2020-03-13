@@ -1,178 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style/theme.css">
-        <script src="scripts/jquery-3.4.1.min.js"></script>
-        <script src="scripts/mesFonctions.js"></script>
-        <title>Portfolio - Isar Fridriksson</title>
-    </head>
-    <body id="sectionPres">
-
-        <!-- Side navigation -->
-        <div class="sidenav">
-            <a id="currPres" href="#sectionPres">Présentation</a>
-            <a id="currPar" href="#sectionParcours">Parcours</a>
-            <a id="currComp" href="#sectionCompet">Compétences</a>
-            <a id="currProj" href="#sectionProjets">Projets</a>
-            <a href="img/isar Fridriksson.png" target="_blank">CV</a>
+<html lang="en" dir="ltr">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/googlesearch.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+</head>
+<body>
+    <section id="presentation" class="hidden jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">
+                 Isar Fridriksson
+            </h1>
+            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+            <!-- <p>
+                <a href="#" id="toggling" class="btn btn-primary my-2">Main call to action</a>
+                <a id="text-editor-wrap" href="#" class="btn btn-secondary my-2">Secondary action</a>
+            </p> -->
         </div>
+    </section>
 
-        <!-- MAIN (Center website)  METTRE DES ICONES -->
-        <div class="main">
-          <div id="avatardiv">
-            <img src="img/moiCarre.jpg" id="avatar">
-          </div>
-            <h1><span id="prenom">ISAR</span><span id="nom"> FRIDRIKSSON</span></h1>
-            <div><p id="par"><br>Etudiant en informatique à l'IUT de Villetaneuse. <br><br>Apprenti développeur au Ministère de l'Intérieur.</div></p>
-            <!--button style="text-align: center;">SALUT</button> -->
-            <br>
-            <h2>PRÉSENTATION</h2>
-            <div class="content">
-              <p>Etant né à l'ère du numérique, j'ai vite pris goût à l'informatique. J’ai grandi dans un milieu trilingue - je vivais à Paris en alternant avec l’Islande et j’ai vécu 2 ans à Cambridge, j’ai donc appris à m’adapter à chaque milieu. À chaque changement, mes repères étaient remis en perspective mais le numérique restait le même où que je sois. L’informatique est pour moi un moyen de connecter les frontières entre elles.
-                <br>Ce que je préfère dans ce domaine, c'est la résolution de problèmes et la recherche de solutions visant à réduire les efforts non nécessaires. J’ai de l’expérience dans le développement web et je vise à être DevOps.</p>
-            </div>
-            <br>
-
-            <div id="sectionParcours">
-                <h2>PARCOURS</h2>
-                <div class="timeline">
-                    <div class="container left">
-                        <div class="content">
-                            <h2>2018-2020</h2>
-                            <p>Développeur d'applications web en alternance au Ministère de l'Intérieur. </p>
-                        </div>
-                    </div>
-                    <div class="container right">
-                        <div class="content">
-                            <h2>2018-2020</h2>
-                            <p>Formation à l'IUT Informatique de Villetaneuse <br>Université Paris 13</p>
-                        </div>
-                    </div>
-                    <div class="container left">
-                        <div class="content">
-                            <h2>2018</h2>
-                            <p>Obtention du Bac Scientifique avec mention.<br>Options :<li>Science de l’Ingénieur<li>Informatique et Science du Numérique<li>LV Euro</p>
-                        </div>
-                    </div>
-                    <div class="container right">
-                        <div class="content">
-                            <h2>2017</h2>
-                            <p>Création du <a href="http://www.fornleif.is" target="_blank">site de l'institut archéologique islandais</a>.<br>Chargé de maintenance et support utilisateur aujourd'hui.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-
-
-            </div>
-            <div id="sectionCompet">
-                <h2>COMPETENCES</h2>
-
-                <div class="row">
-                    <div class="column">
-                        <div class="content">
-                            <img class="logos" src="img/django.png" alt="django">
-                            <h3>Django</h3>
-                            <p>Production et déploiement d'applications web</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                          <img class="logos" src="img/java.png" alt="java">
-                            <h3>Java</h3>
-                            <p>Connaissances intermédiaires en programmation objet</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                          <img class="logos" src="img/sql.png" alt="sql">
-                            <h3>SQL</h3>
-                            <p>Création de BDD<br>Fonctions SQL<br>Requêtes avancées</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                          <img class="logos" src="img/python.png" alt="python">
-                            <h3>Python</h3>
-                            <p>Programmes algorithmiques et utilitaires poussés</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-                        <div class="content">
-                          <img class="logos" src="img/english.png" alt="english">
-                            <h3>Anglais Courant</h3>
-                            <p>TOEIC niveau C1<br></p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                          <img class="logos" src="img/htmlcssjs.jpeg" alt="htmlcssjs">
-                            <h3>HTML/CSS/JS</h3>
-                            <p>Connaissances poussées<br></p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                          <img class="logos" src="img/project.png" alt="project">
-                            <h3>Gestion de projet informatique</h3>
-                            <p>Rédaction d'un cahier des charges fonctionnel et technique<br>Maîtrise des outils liés à la méthode AGILE<br></p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="content">
-                          <img class="logos" src="img/devstruct.jpeg" alt="devstruct">
-                            <h3>Structure de développement informatique</h3>
-                            <p>Mise en place des serveurs GitLab, BDD, Test et Production afin de mener un projet en équipe sur réseau privé</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="sectionProjets">
-                <h2>QUELQUES PROJETS...</h2>
-                <div class="content">
-                    <h3>Projets au Ministère de l'Intérieur</h3>
-                    <p>Outils de gestion sous forme d'applications web. Créées sous Django et dialoguant avec différents serveurs. Ces projets sont confidentiels.</p>
-                    <br>
-                    <h3>Projet de création d'un site web </h3>
-                    <p>Exercice de création d'un site web en équipe pour un magasin bio.</p>
-                    <span onclick="toggleDiv('projBio')" class="affImg">Images</span>
-                    <div class="hidden" id="projBio">
-                        <br>Section achats :<br>
-                        <img class="captures" src="img/legumes.JPG">
-                        <br>Section calendrier :<br>
-                        <img class="captures" src="img/agenda.JPG">
-                    </div>
-
-                    <br><br>
-
-                    <h3>Projet de gestion de projet</h3>
-                    <p><a target="_blank" href="img/GestionProjet.pdf">Rapport</a> sur un projet de réaménagement d'une chambre en studio.</p>
-                    <br>
-                    <h3>Projet d'IHM (Interface Homme-Machine)</h3>
-                    <p>Création d'un logiciel type "Paint" sous Java.</p>
-                    <span onclick="toggleDiv('projIHM')" class="affImg">Images</span>
-                    <div class="hidden" id="projIHM">
-                        <br>Section dessin :<br>
-                        <img class="captures" src="img/ihm1.JPG">
-                        <br>Couleurs et enregistrement :<br>
-                        <img class="captures" src="img/ihm2.JPG">
-                    </div>
-
-                    <br><br>
-
-
-                </div>
-            </div>
-
-            <span onclick="closeNav()" id="hidenav">&times</span>
-            <span onclick="openNav()" id="shownav">&#9776;</span>
-            <span onclick="closeNavMobile()" id="hidenavmobile">&times</span>
-            <span onclick="openNavMobile()" id="shownavmobile">&#9776;</span>
+<div class="vertical-center">
+    <div class="container centerit">
+        <h1 id="logo">Google</h1>
+        <div class="searchBar">
+            <span id="typedName"></span><span class="typed-cursor"></span>
         </div>
+        <input type="submit" id="search" value="Rechercher">
+    </div>
 
+</div>
 
-    </body>
+<div class="text-editor-container hidden">
+  &nbsp;
+    <div id="firstEditor" class="hidden text-editor-wrap">
+        <div class="title-bar"><span class="title">typed.js — bash — 80x<span class="terminal-height">10</span></span></div>
+        <div class="typed-text-body">
+> <span id="typedFirst"></span><span id="firstCurs" class="typed-cursor"></span>
+        </div>
+    </div>
+    <div id="secondEditor" class="hidden text-editor-wrap">
+        <div class="title-bar"><span class="title">typed.js — bash — 80x<span class="terminal-height">10</span></span></div>
+        <div class="typed-text-body">
+> <span id="typedSecond"></span><span id="secondCurs" class="typed-cursor"></span>
+        </div>
+    </div>
+    <div id="thirdEditor" class="hidden text-editor-wrap">
+        <div class="title-bar"><span class="title">typed.js — bash — 80x<span class="terminal-height">10</span></span></div>
+        <div class="typed-text-body">
+> <span id="typedThird"></span><span class="typed-cursor"></span>
+        </div>
+    </div>
+    &nbsp;
+    <span class="stretch"></span>
+</div>
+</body>
 </html>
