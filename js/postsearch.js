@@ -7,18 +7,8 @@ $(document).ready(function() {
 
         $("#presentation").hide();
 
+        $( "body" ).addClass( "header" ); //css add background
         $( ".vertical-center" ).addClass( "hidden" ); //css hide google
-        $( "body" ).addClass( "header" );
-
-
-        // $( "#firstEditor" ).fadeTo(1000,1, function(){
-        //     typeFirst();
-        //     $( "#secondEditor" ).fadeTo(1000,1, function(){
-        //         typeSecond();
-        //         $( "#thirdEditor" ).fadeTo(1000,1, function(){
-        //             typeThird();
-        //             $( "#presentation" ).slideDown(3000);
-        //         });});}); //js unhide
 
         $( "#firstEditor" ).fadeTo(50,1);
         typeFirst();
