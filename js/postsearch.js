@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 function typeFirst() {
     new Typed("#typedFirst",{
-        strings: ['isar.skills^220 `<br>["Python", "JS", "Django", "MySQL"]<br>` > isar.projects^220 `<br>"<a href="https://github.com/fridisar" target="_blank">github<a>"`<br> >'],
+        strings: ['isar.skills^220 `<br>["Python", "JS", "Django", "MySQL"]<br>` > isar.projects^220 `<br>"<a href="https://github.com/fridisar" target="_blank">github<a>"`'],
         typeSpeed: 40,
         onComplete: function(self){
             self.cursor.remove();
@@ -33,7 +33,7 @@ function typeFirst() {
 
 function typeSecond() {
     new Typed("#typedSecond",{
-        strings: ['isar.job^220 `<br>"full-stack-developer"<br>` > isar.education^220 `<br>"computer-science-dut"`<br> >'],
+        strings: ['isar.job^220 `<br>"full-stack-developer"<br>` > isar.education^220 `<br>"computer-science-dut"`'],
         typeSpeed: 40,
         onComplete: function(self){
             self.cursor.remove();
